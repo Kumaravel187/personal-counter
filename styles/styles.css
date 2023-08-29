@@ -1,0 +1,121 @@
+/* Set base font size for the document */
+html {
+  font-size: 100%;
+}
+
+/* Reset default margin, padding, and box-sizing for all elements */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  /* Choose a monospace font */
+  font-family: "Tektur", cursive;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  padding: 1rem;
+  background-color: #eca400; /* Background color for the body */
+}
+
+@media (min-width: 56.25rem) {
+  /* Media query for larger screens */
+  body {
+    align-items: center; /* Center content vertically */
+  }
+}
+.container {
+  /* Flex container styling */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 20rem;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  background-color: #006992;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+  /* Styling for the heading */
+  /* Styling for the count display */
+  /* Styling for the button container */
+}
+.container h1 {
+  color: #eaf8bf;
+  animation: moveInLeft 1s ease-in-out;
+}
+.container span {
+  font-size: 5rem;
+  color: #eaf8bf;
+}
+.container .btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* Styling for buttons */
+  /* Apply animation to buttons with class btn-animation */
+}
+.container .btn-container .btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: "Tektur", cursive;
+  text-transform: uppercase;
+  font-size: 0.55rem;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* Button hover state */
+  /* Button active state */
+}
+.container .btn-container .btn:hover {
+  transform: translateY(-0.2rem);
+  background-color: #eca400;
+  color: #001d4a;
+  font-weight: 500;
+}
+.container .btn-container .btn:active {
+  transform: translateY(0rem);
+}
+.container .btn-container .btn.btn-animation {
+  animation: moveInBottom 0.8s ease-in-out;
+}
+
+/* Animation keyframes for moving in from the left */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  70% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Animation keyframes for moving in from the bottom */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=styles.css.map */

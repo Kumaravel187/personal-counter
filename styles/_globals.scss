@@ -1,0 +1,36 @@
+/* Set base font size for the document */
+html {
+  font-size: 100%;
+}
+
+/* Reset default margin, padding, and box-sizing for all elements */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  /* Choose a monospace font */
+  font-family: "Tektur", cursive;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  padding: 1rem;
+  background-color: #eca400; /* Background color for the body */
+}
+
+@media (min-width: 56.25rem) {
+  /* Media query for larger screens */
+  body {
+    align-items: center; /* Center content vertically */
+  }
+}

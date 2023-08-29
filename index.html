@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata section -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Counter App</title>
+    <!-- Preconnecting to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to external font stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <!-- Main content of the webpage -->
+    <div class="container">
+      <!-- Heading for the counter app -->
+      <h1>counter</h1>
+      <!-- Placeholder for displaying the count -->
+      <span id="count"></span>
+      <!-- Button container -->
+      <div class="btn-container">
+        <!-- Button to decrease the count -->
+        <button id="decrease" class="btn btn-animation">decrease</button>
+        <!-- Button to reset the count -->
+        <button id="reset" class="btn btn-animation">reset</button>
+        <!-- Button to increase the count -->
+        <button id="increase" class="btn btn-animation">increase</button>
+      </div>
+    </div>
+
+    <!-- Script to include the JavaScript logic -->
+    <script src="./app/app.js"></script>
+  </body>
+</html>
