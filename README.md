@@ -38,7 +38,7 @@ todo-app/
 
 ## Links
 
-Project URL:
+Project URL: https://lucent-sunburst-e9b051.netlify.app
 
 ## Contributing
 
