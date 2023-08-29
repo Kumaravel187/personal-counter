@@ -22,18 +22,12 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   text-align: center;
   padding: 1rem;
   background-color: #eca400; /* Background color for the body */
 }
 
-@media (min-width: 56.25rem) {
-  /* Media query for larger screens */
-  body {
-    align-items: center; /* Center content vertically */
-  }
-}
 .container {
   /* Flex container styling */
   display: flex;
