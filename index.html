@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Set character encoding and viewport settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect to Google Fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Include Roboto font from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Include Font Awesome CSS from CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,20 +23,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Include local styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- Set the title of the webpage -->
     <title>Kumaravel - Simple Counter</title>
   </head>
   <body class="body">
+    <!-- Main section for the counter -->
     <section class="body__counter">
+      <!-- Display the counter value -->
       <div class="body__counter--counter">
         <p class="countervalue">0</p>
       </div>
 
+      <!-- Utility icons for incrementing and decrementing the counter -->
       <div class="body__counter--utilities">
         <i class="fa-solid fa-plus icon plus"></i>
         <i class="fa-solid fa-minus icon minus"></i>
       </div>
     </section>
+
+    <!-- Include the JavaScript file -->
     <script src="./app.js"></script>
   </body>
 </html>

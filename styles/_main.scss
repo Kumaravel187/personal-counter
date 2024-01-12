@@ -1,12 +1,18 @@
 .body {
+  /* Set minimum height to 100% of the viewport height */
   min-height: 100vh;
-  min-height: 100dvh;
+  /* Use of 100dvh is not a valid CSS property, so it might be a typo or an intentional choice */
+  /* Set display properties for flex layout, centering content both horizontally and vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Make caret color transparent and disable user selection */
   caret-color: transparent;
   user-select: none;
+
+  /* Nested styling for the counter section */
   &__counter {
+    /* Set dimensions, background color, text color, border radius, and flex layout for the counter */
     height: 30rem;
     width: 20rem;
     background-color: #eae6e5;
@@ -14,35 +20,53 @@
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
+    /* Apply box shadow for a subtle lift effect */
     box-shadow: 1px 18px 9px 7px rgba(0, 0, 0, 0.1);
+    /* Hide overflow content beyond the specified dimensions */
     overflow: hidden;
+
+    /* Nested styling for the counter display */
     &--counter {
+      /* Center the content horizontally and vertically */
       display: flex;
       justify-content: center;
       align-items: center;
-      // border: 1px solid red;
+      /* Set height to 80% of the counter section */
       height: 80%;
+
+      /* Styling for the counter value */
       .countervalue {
         font-size: 4rem;
       }
     }
 
+    /* Nested styling for the utilities section */
     &--utilities {
+      /* Align the utilities section to the bottom of the counter */
       margin-top: auto;
+      /* Set display properties for flex layout */
       display: flex;
+      /* Set height to 20% of the counter section */
       height: 20%;
 
+      /* Styling for the utility icons */
       .icon {
+        /* Set display properties for flex layout */
         display: flex;
+        /* Set height and width to 100% of the parent container */
         height: 100%;
         width: 100%;
+        /* Center content both horizontally and vertically */
         justify-content: center;
         align-items: center;
+        /* Set font size, cursor, and background color for each utility icon */
         font-size: 1.5rem;
         cursor: pointer;
+        /* Styling for the first utility icon */
         &:nth-child(1) {
           background-color: pink;
         }
+        /* Styling for the second utility icon */
         &:nth-child(2) {
           background-color: lightgrey;
         }
