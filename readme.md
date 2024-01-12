@@ -14,7 +14,7 @@ To run this project locally, you need the following:
 
 ```bash
 git clone https://github.com/your-username/personal-counter.git
-cd simple-counter
+cd personal-counter
 ```
 
 ### Open the HTML File
